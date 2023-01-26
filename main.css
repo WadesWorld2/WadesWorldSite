@@ -38,6 +38,9 @@ h3 {
 	font-size: 20px;
 	line-height: 1.5em;
 }
+h4,h5,h6{
+	color: #ffffffff;
+}
 img.avatar{
 	width: 200px;
 	height: 200px;
