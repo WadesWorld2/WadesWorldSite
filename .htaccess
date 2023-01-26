@@ -1,0 +1,8 @@
+ErrorDocument 404 /page/404.html
+ErrorDocument 403 /page/403.html
+
+#SymLinks Start
+RewriteEngine On 
+RewriteRule ^403$ /page/403.html
+RewriteRule ^404$ /page/404.html
+#SymLinks End
