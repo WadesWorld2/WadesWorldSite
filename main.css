@@ -58,6 +58,15 @@ div.footer{
     width: 100%;
     overflow: hidden;
 }
+.sa-credit{
+	border-bottom-color: transparent;
+	text-decoration: none;
+}
+.sa-credit:hover{
+	border-bottom-color: transparent;
+	text-decoration: none;
+	color: #7289DA !important; 
+}
 sub {
 	color: #fff;
 	font-family: monospace, monospace;
