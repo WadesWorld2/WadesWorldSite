@@ -24,11 +24,13 @@
     <h2><a href="mailto:waterwade@protonmail.com">Email</a></h2>
     <h2><a href="https://sop.wtf/wwgit">Gitea</a></h2>
     <h2><a href="https://sop.wtf/wwmas">Mastodon</a></h2>
-    <h2><a href="https://sop.wtf/wwyoutube">Youtube</a></h2>
+    <h2><a href="https://sop.wtf/wwpronouns">Pronouns</a></h2>
+    <h2><a id="discord" href="#discord" onclick="navigator.clipboard.writeText('Wade#7925');;return true;">Discord</a></h2>
 </div>
 <div class="footer align-center">
     <p>&copy;2023 Wade Waters</p>
     <p>Developed by <a class="sa-credit" href="https://sophia.wtf">Sophia Atkinson</a></p>
 </div>
 </body>
+<script>document.getElementById('discord').onclick=function(event){const str=event.target.innerText;const el=document.createElement('textarea');el.value=str;document.body.appendChild(el);el.select();navigator.clipboard.writeText('Wade#7925');document.body.removeChild(el);const buttontext=document.getElementById("discord");buttontext.innerHTML='Copied!';setTimeout(()=>{buttontext.innerHTML=str},4000)};</script>
 </html>
