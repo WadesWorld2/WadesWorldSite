@@ -3,9 +3,17 @@ CSS by Sophia Atkinson
 https://sophia.wtf
 CC BY-NC 4.0
 */
+@font-face {
+    font-family: 'OpenDyslexic3'; 
+    src: url("/assets/css/font/OpenDyslexic3-Regular.ttf") format("truetype");
+    font-style: normal;
+}
 @import url("https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css");
 body {
 	background: #141729;
+}
+.dyslexia{
+	font-family: OpenDyslexic3 !important;
 }
 h1 {
 	color: #fff;
