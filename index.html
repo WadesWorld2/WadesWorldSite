@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Wade Waters</title>
+    <title>Wade&#39;s Worlds</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="Welcome to Wades World.">
@@ -17,23 +17,35 @@
     <meta property="og:title" content="Wade Waters">
     <meta property="og:image" content="/img/cover.webp">
     <meta property="og:description" content="Welcome to Wades World.">
-    <link rel="stylesheet" href="/assets/css/main.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
     <p hidden>
         <a rel="me" href="https://mstdn.social/@wadeAU">Mastodon</a>
     </p>
 </head>
+<body>
 <div class="align-center">
-    <img src="/img/avatar.webp" alt="Avatar" class="avatar">
-    <h2><a href="mailto:waterwade@protonmail.com">Email</a></h2>
-    <h2><a href="https://sop.wtf/wwgit">Gitea</a></h2>
-    <h2><a href="https://sop.wtf/wwmas">Mastodon</a></h2>
-    <h2><a href="https://sop.wtf/wwpronouns">Pronouns</a></h2>
-    <h2><a id="discord" href="#discord">Discord</a></h2>
+    <h1 id="header">Wade&#39;s World</h1>
+    <img src="/img/spinnyclippy.webp" alt="Microsoft Clippy Spinning" class="avatar">
+    <h2>
+    <a href="mailto:waterwade@protonmail.com">Email</a>
+    <br>
+    <a href="https://sop.wtf/wwgit">Gitea</a>
+    <br>
+    <a href="https://sop.wtf/wwmas">Mastodon</a>
+    <br>
+    <a href="https://sop.wtf/wwpronouns">Pronouns</a>
+    <br>
+    <a id="discord" href="#discord">Discord</a>
+    </h2>
 </div>
-<div class="footer align-center">
-    <p>&copy;2023 Wade Waters</p>
-    <p>Developed by <a class="sa-credit" href="https://sophia.wtf">Sophia Atkinson</a></p>
+<div id="footer">
+    <p>
+    &copy;<script>document.write(new Date().getFullYear());</script> Wade Waters
+    <br>
+    Developed by <a class="sa-credit" href="https://sophia.wtf">Sophia Atkinson</a>
+    </p>
+
 </div>
 </body>
-<script>document.getElementById('discord').onclick=function(event){const str=event.target.innerText;const el=document.createElement('textarea');el.value=str;document.body.appendChild(el);el.select();navigator.clipboard.writeText('Wade#7925');document.body.removeChild(el);const buttontext=document.getElementById("discord");buttontext.innerHTML='Copied!';setTimeout(()=>{buttontext.innerHTML=str},4000)};</script>
+<script>document.getElementById('discord').onclick=function(event){const str=event.target.innerText;const el=document.createElement('textarea');el.value=str;document.body.appendChild(el);el.select();navigator.clipboard.writeText('wadewaters');document.body.removeChild(el);const buttontext=document.getElementById("discord");buttontext.innerHTML='Copied!';setTimeout(()=>{buttontext.innerHTML=str},4000)};</script>
 </html>
