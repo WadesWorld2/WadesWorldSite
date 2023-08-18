@@ -7,6 +7,7 @@ CC BY-NC 4.0
 :root{
 	--main-font: OpenDyslexic2 Alt;
 	--line-height: 1.5em;
+	--text-color: #fff;
 }
 body {
 	background: #141729;
@@ -22,9 +23,6 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-*{
-	cursor: url(/img/cursor.webp), default;
-}
 .dyslexia{
 	font-family: OpenDyslexic2 Alt !important;
 }
@@ -32,37 +30,37 @@ br{
 	line-height: var(--line-height);
 }
 h1 {
-	color: #fff;
+	color: var(--text-color);
 	font-family: var(--main-font);
 	font-size: 35px;
 	line-height: var(--line-height);
 }
 h2 {
-	color: #fff;
+	color: var(--text-color);
 	font-family: var(--main-font);
 	font-size: 25px;
 	line-height: var(--line-height);
 }
 h3 {
-	color: #fff;
+	color: var(--text-color);
 	font-family: var(--main-font);
 	font-size: 20px;
 	line-height: var(--line-height);
 }
 h4{
-	color: #fff;
+	color: var(--text-color);
 	font-family: var(--main-font);
 	font-size: 15px;
 	line-height: var(--line-height);
 }
 h5{
-	color: #fff;
+	color: var(--text-color);
 	font-family: var(--main-font);
 	font-size: 10px;
 	line-height: var(--line-height);
 }
 h6{
-	color: #fff;
+	color: var(--text-color);
 	font-family: var(--main-font);
 	font-size: 5px;
 	line-height: var(--line-height);
@@ -71,7 +69,7 @@ h6{
 	display: none;
 }
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
-	color: #fff;
+	color: var(--text-color);
 	text-decoration: none;
 	border-bottom-color: transparent;
 }
@@ -124,13 +122,13 @@ object {
 }
 
 sub {
-	color: #fff;
+	color: var(--text-color);
 	font-family: var(--main-font);
 	font-size: 0.8em;
 }
 
 sup {
-	color: #fff;
+	color: var(--text-color);
 	font-family: var(--main-font);
 	font-size: 0.8em;
 	position: relative;
@@ -139,7 +137,7 @@ sup {
 
 hr {
 	border: 0;
-	border-bottom: solid 2px #fff;
+	border-bottom: solid 2px var(--text-color);
 	margin: 2em 0;
 }
 
@@ -155,7 +153,7 @@ blockquote{
 }
 
 code {
-	background: #fff;
+	background: var(--text-color);
 	border-radius: 0.35em;
 	border: solid 2px #121212;
 	font-family: "Courier New", monospace;
@@ -165,7 +163,7 @@ code {
 }
 
 p {
-	color: #fff;
+	color: var(--text-color);
 	font-family: var(--main-font);
 	font-size: 1em;
 }
@@ -176,7 +174,7 @@ a {
 	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	border-bottom: solid 1px;
-	color: #fff;
+	color: var(--text-color);
 	text-decoration: none;
 }
 
@@ -189,12 +187,12 @@ a:active {
 }
 
 strong, b {
-	color: #fff;
+	color: var(--text-color);
 	font-weight: 400;
 }
 
 em, i {
-	color: #fff;
+	color: var(--text-color);
 	font-style: italic;
 }
 
@@ -221,4 +219,7 @@ em, i {
 @keyframes change {
     from { color: #3AB54A }
     to   { color: #ED1B24 }
+}
+*{
+	cursor: url("data:image/webp;base64,UklGRloDAABXRUJQVlA4WAoAAAAQAAAAHwAAHwAAQUxQSHYBAAABoKtt2yHZev/6l23bth2u0DiCFa3Ytm2EK7ON7R3aNkKj6u/32eyqdQYRMQHr92WKQc/wOq/OlrJn0OMjOJgpVqcuT+HVXoqVRekc/DBBsSplusHv/DRMWUWZxoFz3m6sUE3Q4F8wOXsVq5H0AsmmNkZZRc2+pWYK7lem50nYiWVqXE2Dj8gNNb7vrxBjKBW0BWxIfL9CkmIoIWnOepwgwZp1W3tIsUyQNkFRI9WAHw+0UxbqUwxa/gUU2CmHr+dLWX1SULOVf5JsU8vhiBRLKEpTXwVjkxLPd1SDEgoNpA1gbJzz2WjFElKUtpMMhpzf5ilkJRQ1CxuwKWCt1KBEpjnwL2ySudhWIdQV1Pd3bAM2Lvhyoco2+ozctgHjAi42rS/oPFAYG2xSzon6pGZL7gKFsbExP5eRNP6CqSVssPmlVAzSmEtQGNuJh6WkLJPmvgUJO2dnBVKWqcF2yO0/WVqJFKVpH0CN1xpXpNBALU/+UlztLlZQOCC+AQAAsAgAnQEqIAAgAD5tLJFFpCKhmAQAQAbEtABOhxAG8TS2ZELfQSzpPLXsAfyH+kf8Prq/oALieNe0krXrkuQfaRMfU0YERGCCH1gkZL3AAP6tmRuk03q/9R/BaTI+3gJ0Lu0H4RCtDbjmIwNI9LVvnm9ThnX9v+7GvubebhSgSXY3rPZLGKtjjTpXYpJtP85+YrW0ZrY00CekgtELmc2Phw7Y0kGTHn0l6YrTrFwjN5J5uzf+fTquEUFvsEv4q5vuJHjxUABuigh//gs4IQ5Q/10EwvR//+vh69PNYXQh+/qf20cAybP9RlfI9a2Z8l+9rirW4fxjtLf/QBjLRX2AL58MomJojvoCbVOSne+MOgaJPR/pwFT/q7SCnfyLsWJP8OG7muS1Bf9Fz5lqL8epPy3/8mIM8y34nnziJy/3buxPKdsleLGB7b/OTCbnrSj5IB2sEO3/K+7+f+n7UdjFq/TYBTFW8/vyUVqc1h872JQ7r349TIPAMXLt8wiR0tcBUX+GwilvvJndiZ1PEsQPXRpMQPXVqQaBRSdbyz+uquZF/bdGRLo6hEK4t4XqBTQTsj9yENRb+EWzt44AAAA="), default;
 }
