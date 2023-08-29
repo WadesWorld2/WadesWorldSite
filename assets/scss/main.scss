@@ -1,0 +1,290 @@
+/*
+CSS by Sophia Atkinson
+https://sophia.wtf
+CC BY-NC 4.0
+*/
+@import url("https://cdn.satki.net/static/fonts/OpenDyslexic2-Alt-A/opendyslexic.min.css");
+
+:root {
+    --main-font: OpenDyslexic2 Alt;
+    --line-height: 1.5em;
+    --text-color: #fff;
+    --href: #1BA965;
+}
+::selection{
+    background-color: #10653c;
+  }
+body {
+    background: #141729;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    cursor: url("data:image/webp;base64,UklGRloDAABXRUJQVlA4WAoAAAAQAAAAHwAAHwAAQUxQSHYBAAABoKtt2yHZev/6l23bth2u0DiCFa3Ytm2EK7ON7R3aNkKj6u/32eyqdQYRMQHr92WKQc/wOq/OlrJn0OMjOJgpVqcuT+HVXoqVRekc/DBBsSplusHv/DRMWUWZxoFz3m6sUE3Q4F8wOXsVq5H0AsmmNkZZRc2+pWYK7lem50nYiWVqXE2Dj8gNNb7vrxBjKBW0BWxIfL9CkmIoIWnOepwgwZp1W3tIsUyQNkFRI9WAHw+0UxbqUwxa/gUU2CmHr+dLWX1SULOVf5JsU8vhiBRLKEpTXwVjkxLPd1SDEgoNpA1gbJzz2WjFElKUtpMMhpzf5ilkJRQ1CxuwKWCt1KBEpjnwL2ySudhWIdQV1Pd3bAM2Lvhyoco2+ozctgHjAi42rS/oPFAYG2xSzon6pGZL7gKFsbExP5eRNP6CqSVssPmlVAzSmEtQGNuJh6WkLJPmvgUJO2dnBVKWqcF2yO0/WVqJFKVpH0CN1xpXpNBALU/+UlztLlZQOCC+AQAAsAgAnQEqIAAgAD5tLJFFpCKhmAQAQAbEtABOhxAG8TS2ZELfQSzpPLXsAfyH+kf8Prq/oALieNe0krXrkuQfaRMfU0YERGCCH1gkZL3AAP6tmRuk03q/9R/BaTI+3gJ0Lu0H4RCtDbjmIwNI9LVvnm9ThnX9v+7GvubebhSgSXY3rPZLGKtjjTpXYpJtP85+YrW0ZrY00CekgtELmc2Phw7Y0kGTHn0l6YrTrFwjN5J5uzf+fTquEUFvsEv4q5vuJHjxUABuigh//gs4IQ5Q/10EwvR//+vh69PNYXQh+/qf20cAybP9RlfI9a2Z8l+9rirW4fxjtLf/QBjLRX2AL58MomJojvoCbVOSne+MOgaJPR/pwFT/q7SCnfyLsWJP8OG7muS1Bf9Fz5lqL8epPy3/8mIM8y34nnziJy/3buxPKdsleLGB7b/OTCbnrSj5IB2sEO3/K+7+f+n7UdjFq/TYBTFW8/vyUVqc1h872JQ7r349TIPAMXLt8wiR0tcBUX+GwilvvJndiZ1PEsQPXRpMQPXVqQaBRSdbyz+uquZF/bdGRLo6hEK4t4XqBTQTsj9yENRb+EWzt44AAAA="), default;
+}
+#links br {
+    line-height: var(--line-height);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--main-font);
+    color: var(--text-color);
+}
+
+#links {
+    line-height: var(--line-height);
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+h5 {
+    font-size: 10px;
+}
+
+h6 {
+    font-size: 5px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom-color: transparent;
+}
+
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+.avatar {
+    height: 200px;
+    user-select: none;
+}
+
+#footer {
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 0;
+}
+
+@media only screen and (max-height: 768px) {
+    #footer {
+        position: relative !important;
+        justify-items: flex-end;
+        display: flex;
+        align-items: flex-end;
+        align-content: flex-end;
+        flex-wrap: wrap;
+    }
+}
+
+.sa-credit {
+    border-bottom-color: transparent;
+    text-decoration: none;
+}
+
+.sa-credit:hover {
+    border-bottom-color: transparent;
+    text-decoration: none;
+    color: #7289DA !important;
+}
+
+sub {
+    color: var(--text-color);
+    font-family: var(--main-font);
+    font-size: 0.8em;
+}
+
+sup {
+    color: var(--text-color);
+    font-family: var(--main-font);
+    font-size: 0.8em;
+    position: relative;
+    top: -0.5em;
+}
+
+hr {
+    border: 0;
+    border-bottom: solid 2px var(--text-color);
+    margin: 2em 0;
+}
+
+hr.major {
+    margin: 3em 0;
+}
+
+blockquote {
+    border-left: solid 6px #121212;
+    font-style: italic;
+    margin: 0 0 2em 0;
+    padding: 0.5em 0 0.5em var(--line-height);
+}
+
+code {
+    background: var(--text-color);
+    border-radius: 0.35em;
+    border: solid 2px #121212;
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+    margin: 0 0.25em;
+    padding: 0.25em 0.65em;
+}
+
+p {
+    color: var(--text-color);
+    font-family: var(--main-font);
+    font-size: 1em;
+}
+
+a {
+    -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    border-bottom: solid 1px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    border-bottom-color: unset;
+    color: var(--href) !important;
+    text-decoration: none;
+}
+
+strong,
+b {
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+em,
+i {
+    color: var(--text-color);
+    font-style: italic;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+#header {
+    animation: change 5s step-end both;
+}
+
+@keyframes change {
+    from {
+        color: #3AB54A
+    }
+
+    to {
+        color: #ED1B24
+    }
+}
+
+
+#footer p::before {
+    display: inline-block;
+    content: "\00A9";
+    -webkit-animation: turntocopyleft 2.0s forwards;
+    animation: turntocopyleft 2.0s forwards;
+}
+@keyframes turntocopyleft {
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+#links details>summary {
+    list-style: none;
+}
+
+#links details>summary::-webkit-details-marker {
+    display: none;
+}
+
+#links details>summary:hover,
+#links details>summary:focus,
+#links details>summary:active {
+    border-bottom-color: transparent;
+    color: var(--href) !important;
+    text-decoration: none;
+}
+
+#links details>summary {
+    -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}

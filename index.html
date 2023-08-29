@@ -17,7 +17,7 @@
     <meta property="og:title" content="Wade Waters">
     <meta property="og:image" content="/img/cover.webp">
     <meta property="og:description" content="Welcome to Wades World.">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.min.css">
     <p hidden>
         <a rel="me" href="https://mstdn.social/@wadeAU">Mastodon</a>
     </p>
@@ -26,7 +26,7 @@
 <div class="align-center">
     <h1 id="header">Wade&#39;s World</h1>
     <img src="/img/spinnyclippy.webp" alt="Microsoft Clippy Spinning" class="avatar">
-    <h2>
+    <h2 id="links">
     <a href="mailto:waterwade@protonmail.com">Email</a>
     <br>
     <a href="https://sop.wtf/wwgit">Gitea</a>
@@ -35,17 +35,14 @@
     <br>
     <a href="https://sop.wtf/wwpronouns">Pronouns</a>
     <br>
-    <a id="discord" href="#discord">Discord</a>
+    <details><summary>Discord</summary>WaterWade</details>
     </h2>
 </div>
 <div id="footer">
-    <p>
-    &copy;<script>document.write(new Date().getFullYear());</script> Wade Waters
+    <p><script>document.write(new Date().getFullYear());</script><noscript>20xx</noscript> Wade Waters
     <br>
-    Developed by <a class="sa-credit" href="https://sophia.wtf">Sophia Atkinson</a>
+    Designed by <a class="sa-credit" href="https://sophia.wtf">Sophia Atkinson</a>
     </p>
-
 </div>
 </body>
-<script>document.getElementById('discord').onclick=function(event){const str=event.target.innerText;const el=document.createElement('textarea');el.value=str;document.body.appendChild(el);el.select();navigator.clipboard.writeText('wadewaters');document.body.removeChild(el);const buttontext=document.getElementById("discord");buttontext.innerHTML='Copied!';setTimeout(()=>{buttontext.innerHTML=str},4000)};</script>
 </html>

@@ -6,3 +6,9 @@ RewriteEngine On
 RewriteRule ^403$ /page/403.html
 RewriteRule ^404$ /page/404.html
 #SymLinks End
+
+	#Allow FILES
+     <Files ~ (LICENSE|README.md)$>
+       Order allow,deny
+       Allow from all
+    </Files>
