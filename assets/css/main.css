@@ -38,10 +38,6 @@ body {
   cursor: url("data:image/webp;base64,UklGRloDAABXRUJQVlA4WAoAAAAQAAAAHwAAHwAAQUxQSHYBAAABoKtt2yHZev/6l23bth2u0DiCFa3Ytm2EK7ON7R3aNkKj6u/32eyqdQYRMQHr92WKQc/wOq/OlrJn0OMjOJgpVqcuT+HVXoqVRekc/DBBsSplusHv/DRMWUWZxoFz3m6sUE3Q4F8wOXsVq5H0AsmmNkZZRc2+pWYK7lem50nYiWVqXE2Dj8gNNb7vrxBjKBW0BWxIfL9CkmIoIWnOepwgwZp1W3tIsUyQNkFRI9WAHw+0UxbqUwxa/gUU2CmHr+dLWX1SULOVf5JsU8vhiBRLKEpTXwVjkxLPd1SDEgoNpA1gbJzz2WjFElKUtpMMhpzf5ilkJRQ1CxuwKWCt1KBEpjnwL2ySudhWIdQV1Pd3bAM2Lvhyoco2+ozctgHjAi42rS/oPFAYG2xSzon6pGZL7gKFsbExP5eRNP6CqSVssPmlVAzSmEtQGNuJh6WkLJPmvgUJO2dnBVKWqcF2yO0/WVqJFKVpH0CN1xpXpNBALU/+UlztLlZQOCC+AQAAsAgAnQEqIAAgAD5tLJFFpCKhmAQAQAbEtABOhxAG8TS2ZELfQSzpPLXsAfyH+kf8Prq/oALieNe0krXrkuQfaRMfU0YERGCCH1gkZL3AAP6tmRuk03q/9R/BaTI+3gJ0Lu0H4RCtDbjmIwNI9LVvnm9ThnX9v+7GvubebhSgSXY3rPZLGKtjjTpXYpJtP85+YrW0ZrY00CekgtELmc2Phw7Y0kGTHn0l6YrTrFwjN5J5uzf+fTquEUFvsEv4q5vuJHjxUABuigh//gs4IQ5Q/10EwvR//+vh69PNYXQh+/qf20cAybP9RlfI9a2Z8l+9rirW4fxjtLf/QBjLRX2AL58MomJojvoCbVOSne+MOgaJPR/pwFT/q7SCnfyLsWJP8OG7muS1Bf9Fz5lqL8epPy3/8mIM8y34nnziJy/3buxPKdsleLGB7b/OTCbnrSj5IB2sEO3/K+7+f+n7UdjFq/TYBTFW8/vyUVqc1h872JQ7r349TIPAMXLt8wiR0tcBUX+GwilvvJndiZ1PEsQPXRpMQPXVqQaBRSdbyz+uquZF/bdGRLo6hEK4t4XqBTQTsj9yENRb+EWzt44AAAA="), default;
 }
 
-#links br {
-  line-height: var(--line-height);
-}
-
 h1,
 h2,
 h3,
@@ -50,10 +46,6 @@ h5,
 h6 {
   font-family: var(--main-font);
   color: var(--text-color);
-}
-
-#links {
-  line-height: var(--line-height);
 }
 
 h1 {
@@ -138,9 +130,9 @@ object {
   text-decoration: none;
 }
 
-.sa-credit:hover {
-  border-bottom-color: transparent;
-  text-decoration: none;
+.sa-credit:hover,
+.sa-credit:focus,
+.sa-credit:active {
   color: #7289DA !important;
 }
 
@@ -200,10 +192,12 @@ a {
 
 a:hover,
 a:focus,
-a:active {
-  border-bottom-color: unset;
+a:active,
+#links details > summary:hover,
+#links details > summary:focus,
+#links details > summary:active {
+  border-bottom-color: transparent;
   color: var(--href) !important;
-  text-decoration: none;
 }
 
 strong,
@@ -268,14 +262,10 @@ i {
   display: none;
 }
 
-#links details > summary:hover,
-#links details > summary:focus,
-#links details > summary:active {
-  border-bottom-color: transparent;
-  color: var(--href) !important;
-  text-decoration: none;
-}
-
 #links details > summary {
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+#links, #links br {
+  line-height: var(--line-height);
 }

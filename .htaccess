@@ -12,3 +12,8 @@ RewriteRule ^404$ /page/404.html
        Order allow,deny
        Allow from all
     </Files>
+    #Allow FILES
+    <Files ~ (.scss)$>
+      Order allow,deny
+      deny from all
+   </Files>
