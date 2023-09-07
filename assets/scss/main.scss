@@ -243,23 +243,11 @@ i {
 #footer p::before {
     display: inline-block;
     content: "\00A9";
-    -webkit-animation: turntocopyleft 2.0s forwards;
-    animation: turntocopyleft 2.0s forwards;
-}
-@keyframes turntocopyleft {
-    from {
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    to {
-        -webkit-transform: rotate(180deg);
-        -moz-transform: rotate(180deg);
-        -o-transform: rotate(180deg);
-        transform: rotate(180deg);
-    }
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    
 }
 #links details>summary {
     list-style: none;

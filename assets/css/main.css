@@ -243,17 +243,9 @@ i {
 #footer p::before {
   display: inline-block;
   content: "©";
-  animation: turntocopyleft 2s forwards;
+  transform: rotate(180deg);
 }
 
-@keyframes turntocopyleft {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(180deg);
-  }
-}
 #links details > summary {
   list-style: none;
 }
